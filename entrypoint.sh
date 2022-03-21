@@ -34,7 +34,7 @@ name="${NAME:-$repo_name}"
 msg "Updating container..."
 apt update && apt upgrade -y
 msg "Installing essential packages..."
-apt install -y --no-install-recommends git make bc bison openssl \
+apt install -y --no-install-recommends xz-utils git make bc bison openssl \
     curl zip kmod cpio flex libelf-dev libssl-dev libtfm-dev wget \
     device-tree-compiler ca-certificates python3 python2
 ln -sf /usr/bin/python3 /usr/bin/python
